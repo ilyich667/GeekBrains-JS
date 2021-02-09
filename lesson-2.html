@@ -59,60 +59,47 @@
         // Присвоить переменной а значение в промежутке [0..15].
         //С помощью оператора switch организовать вывод чисел от a до 15.
 
-        a = +prompt ('Введите число от 1 до 15');
+        a = +prompt ('Введите число от 0 до 15');
 		switch (a) {
-		case 1:
-			alert ( 'Ваше число 1');
-			break;
-		case 2:
-			alert ( 'Ваше число 2');
-			break;
-		case 3:
-			alert ( 'Ваше число 3');
-			break;
-		case 4:
-			alert ( 'Ваше число 4');
-			break;
-		case 5:
-			alert ( 'Ваше число 5');
-			break;
-		case 6:
-			alert ( 'Ваше число 6');
-			break;
-		case 7:
-			alert ( 'Ваше число 7');
-			break;
-		case 8:
-			alert ( 'Ваше число 8');
-			break;
-		case 9:
-			alert ( 'Ваше число 9');
-			break;
-		case 10:
-			alert ( 'Ваше число 10');
-			break;
-		case 11:
-			alert ( 'Ваше число 11');
-			break;
-		case 12:
-			alert ( 'Ваше число 12');
-			break;
-		case 13:
-			alert ( 'Ваше число 13');
-			break;
-		case 14:
-			alert ( 'Ваше число 14');
-			break;
-		case 15:
-			alert ( 'Ваше число 15');
-			break;	
+			case '0':
+				alert(0);
+			case '1':
+				alert(1);
+			case '2':
+				alert(2);
+			case '3':
+				alert(3);
+			case '4':
+				alert(4);
+			case '5':
+				alert(5);
+			case '6':
+				alert(6);
+			case '7':
+				alert(7);
+			case '8':
+				alert(8);
+			case '9':
+				alert(9);
+			case '10':
+				alert(10);
+			case '11':
+				alert(11);
+			case '12':
+				alert(12);
+			case '13':
+				alert(13);
+			case '14':
+				alert(14);
+			case '15':
+				alert(15)
 		}
 
         // Задача 5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами. 
         // Обязательно использовать оператор return. 
 
-		var a = 5;
-		var b = 2;
+		var a = +prompt("Введите первое число: ");
+		var b = +prompt("Введите второе число: ");
 
 		function plus(a, b) {
             return a + b;
@@ -135,22 +122,24 @@
 	//значения операции выполнить одну из арифметических операций (использовать функции из пункта 3) и 		
 	//вернуть полученное значение (использовать switch).
 
-	function mathOperation(arg1, arg2, operation){
-    	switch(operation){
-       		case 'сложение':
-           	    return arg1 + arg2;
-           	    break;
-       		case 'вычитание':
-           	    return arg1 - arg2;
-			    break;
-			case 'деление':
-          	    return arg1 / arg2;
-    	        break;
-       		case 'умножение':
-           	    return arg1 * arg2;
-    		    break;
-   		}
-	}
+		var operation = prompt("Выберите знак + , - , * , /");
+
+		function mathOperation(a, b, operation){
+    		switch(operation){
+				case '+':
+					alert(plus(a, b));
+					break;
+				case '-':
+					alert(minus(a, b));
+					break;
+				case '/':
+					alert(division(a, b));
+					break;
+				case '*':
+					alert(mult(a, b));
+					break;
+			}
+		}
 
 	</script>
 </body>
